@@ -141,7 +141,7 @@ a.sort()
 a
 >> [1, 2, 3, 4]
 ### etc
-reverse, index, insert, revmove , pop(), count
+reverse(), index(), insert(), revmove() , pop(), count()
 ```
 
 
@@ -155,19 +155,71 @@ reverse, index, insert, revmove , pop(), count
 ex) 
   def plus_(a,b) :
     return = a+b
->>> plus(3) >> error    
+plus(3) >> error    
 ---
 
 ### 5. 딕셔너리
 ---
+딕셔너리 예시
+```python
+dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
+
+|           key    |  value                       | 
+|:--- | ---: |  
+| name             |pey90            | 
+| phone           | 0119993323            | 
+|birth |1118|
+```
+
+딕셔너리 데이터 추가 제거
+```python
+###추가
+마법사 = {'STR' : 4, 'DEX':4, 'LUK' :3}
+마법사['INT'] = 10
+마법사
+>> {'STR' : 4, 'DEX':4, 'LUK' :3, 'INT':10}
+###제거
+
+del 마법사['STR']
+```
+딕셔너리 데이터 조회(KEY, VALUE, items()
+```python
+
+CNN_BIG_KOREAN = {"bts":"KPOP", "손흥민":"축구",'김연아':'피겨스케이팅', "페이커":"롤", '봉준호':'영화'}
+CNN_BIG_KOREAN['봉준호']
+>>> 영화
+
+CNN_BIG_KOREAN.keys()
+>> dict_keys(['bts', '손흥민', '김연아', '페이커','봉준호'])
 
 
+CNN_BIG_KOREAN.values()
+>> dict_keys(['KPOP', '축구', '피겨스케이팅', '롤','영화'])
 
+CNN_BIG_KOREAN.items()
+>> dict_items([('bts', 'KPOP'), ('손흥민', '축구'), ('김연아', '피겨스케이팅'),( '페이커','롤'),('봉준호','영화')])
+```
 ### 6. 집합
 ---
+>>> s2 = set("Hello")
+>>> s2
+{'e', 'H', 'l', 'o'}
+
+>>> s1 = set([1, 2, 3, 4, 5, 6])
+>>> s2 = set([4, 5, 6, 7, 8, 9])
+
+>>> s1 & s2
+{4, 5, 6}
+
+>>> s1 | s2
+{1, 2, 3, 4, 5, 6, 7, 8, 9}
 
 ### 7. 불
 ---
+>>> a = True
+>>> b = False
 
 ### 8. 변수
 ---
+a, b = ('python', 'life')
+[a,b] = ['python', 'life']
