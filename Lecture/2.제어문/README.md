@@ -41,17 +41,19 @@ if 조건문:
 ### (1.+) 연산자
 ---
 |비교연산자|설명|
+|:--- | ---: |
 |x<y|x가 y보다 작다|
 |x<=y|x가 y보다 작거나 같다|
 |x==y|x와 y가 같다|
 |x!=y|x와 y가 같지 않다|
 
 ---
+```python
 money =2000
 card = True
 if money >= 3000 or card :
   print("택시를 타고가라")
 else :
   print("걸어가라")
-
+```
 
