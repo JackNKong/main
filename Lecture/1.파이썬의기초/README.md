@@ -112,7 +112,7 @@ c[-1]
 ```python
 a = [삼성전자, sk하이닉스]
 b = [네이버, 카카오]
-a + b
+a + b ### a.extend(b)
 >> [삼성전자, sk하이닉스, 네이버, 카카오]
 
 ###잦은 오류### 
@@ -128,12 +128,40 @@ len(a+b)
 ---
 리스트 함수
 ```python
+### append
+
+favorit_food = ['hamburger', 'pizza', 'cola']
+favorit_food.append('sushi')
+favorit_food
+>> ['hamburger', 'pizza', 'cola','sushi']
+
+### sort
+a = [1,4,3,2]
+a.sort()
+a
+>> [1, 2, 3, 4]
+### etc
+reverse, index, insert, revmove , pop(), count
 ```
+
+
 ### 4. 튜플
+---
+튜플(tuple)은 몇 가지 점을 제외하곤 리스트와 거의 비슷하며 리스트와 다른 점은 다음과 같다.
+
+리스트는 [ ]으로 둘러싸지만 튜플은 ( )으로 둘러싼다.
+리스트는 그 값의 생성, 삭제, 수정이 가능하지만 튜플은 그 값을 바꿀 수 없다.
+함수에서 중요 
+ex) 
+  def plus_(a,b) :
+    return = a+b
+>>> plus(3) >> error    
 ---
 
 ### 5. 딕셔너리
 ---
+
+
 
 ### 6. 집합
 ---
