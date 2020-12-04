@@ -32,9 +32,46 @@ b = 1.2
 ### 2. 문자열
 ---
 
+```python
+'Python is fun'
+'Mother's favorite singer is blackpink'
+##indexing
+>>> a = "Life is too short, You need Python"
+>>> a[0]
+'L'
+>>> a[12]
+'s'
+>>> a[-1]
+'n'
+>>> a[0:5]
+'Life '
+##format
+>>> "I have %s apples" % 3
+'I have 3 apples'
+
+>>> name = 'BLACKPINK'
+>>> first_music = 'BOOMBAYAH' 
+>>> f'가수 이름은 {name}입니다. 데뷔곡은 {first_music}입니다.'
+가수 이름은 BLACKPINK입니다. 데뷔곡은 BOOMBAYAH입니다.
+
+##func
+>>> ",".join(['a', 'b', 'c', 'd'])
+'a,b,c,d'
+
+>>> a = " hi "
+>>> a.strip()
+'hi'
+
+```
 ### 3. 리스트
 ---
-
+```python
+>>> a = []
+>>> b = [1, 2, 3]
+>>> c = ['sana', 'mina', 'nayun', 'dahyun']
+>>> d = [1, 2, 'Life', 'is']
+>>> e = [1, 2, ['Life', 'is']]
+```
 ### 4. 튜플
 ---
 
