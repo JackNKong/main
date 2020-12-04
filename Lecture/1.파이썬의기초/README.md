@@ -31,7 +31,7 @@ b = 1.2
 ```
 ### 2. 문자열
 ---
-
+문자열 기본
 ```python
 'Python is fun'
 'Mother's favorite singer is blackpink'
@@ -45,7 +45,9 @@ b = 1.2
 'n'
 >>> a[0:5]
 'Life '
-##format
+'''
+문자열 포맷
+```python
 >>> "I have %s apples" % 3
 'I have 3 apples'
 
@@ -53,14 +55,30 @@ b = 1.2
 >>> first_music = 'BOOMBAYAH' 
 >>> f'가수 이름은 {name}입니다. 데뷔곡은 {first_music}입니다.'
 가수 이름은 BLACKPINK입니다. 데뷔곡은 BOOMBAYAH입니다.
-
-##func
+```
+문자열 함수
+```python
+###join
 >>> ",".join(['a', 'b', 'c', 'd'])
 'a,b,c,d'
 
+###strip
 >>> a = " hi "
 >>> a.strip()
 'hi'
+
+###find
+>>> a = "Python is the best choice"
+>>> a.find('b')
+14
+
+###split
+>>> a = "Life is too short"
+>>> a.split()
+['Life', 'is', 'too', 'short']
+>>> b = "a:b:c:d"
+>>> b.split(':')
+['a', 'b', 'c', 'd']
 
 ```
 ### 3. 리스트
