@@ -148,28 +148,28 @@ reverse(), index(), insert(), revmove() , pop(), count()
 ### 4. 튜플
 ---
 튜플(tuple)은 몇 가지 점을 제외하곤 리스트와 거의 비슷하며 리스트와 다른 점은 다음과 같다.
-
 리스트는 [ ]으로 둘러싸지만 튜플은 ( )으로 둘러싼다.
 리스트는 그 값의 생성, 삭제, 수정이 가능하지만 튜플은 그 값을 바꿀 수 없다.
 함수에서 중요 
+```python
 ex) 
   def plus_(a,b) :
     return = a+b
 plus(3) >> error    
----
+```
 
 ### 5. 딕셔너리
 ---
 딕셔너리 예시
 ```python
 dic = {'name':'pey', 'phone':'0119993323', 'birth': '1118'}
-
+```
 |           key    |  value                       | 
 |:--- | ---: |  
 | name             |pey90            | 
 | phone           | 0119993323            | 
 |birth |1118|
-```
+
 
 딕셔너리 데이터 추가 제거
 ```python
