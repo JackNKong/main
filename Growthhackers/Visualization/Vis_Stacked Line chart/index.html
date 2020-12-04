@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <title>D3 페이지 템플릿</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+    </style>
+</head>
+
+<body>
+    
+    <script>
+   d3.csv('sample.time.csv', row)
+        .then(callback)
+    var parse = d3.timeParse('%Y-%m-%d');
+        function row(d) {
+            d.date = parse(d.date); //-> 날짜 오브젝트로 변환
+            d.A = +d.A; // -> 숫자 형태로 변환
+            d.B = +d.B;
+            d.C = +d.C;
+            return d;
+        }
+
+    function callback(data) {
+            var w = 400, h = 300;
+            var margin = { top: 10, right: 40, bottom: 20, left: 20 };
+            var innerW = w - margin.right - margin.left,
+                innerH = h - margin.top - margin.bottom;
+
+            var svg = d3.select('body').append('svg')
+                .attr('width', w)
+                .attr('height', h)
+                .append('g')
+                .attr('transform', 'translate(' + [margin.left, margin.top] + ')');
+            var stack = d3.stack()
+                .keys(["A","B","C"])
+                    .order(d3.stackOrderNone)
+                .offset(d3.stackOffsetNone);
+
+            var series = stack(data);
+            console.log(series);
+
+            var data2 = [
+            { month: new Date(2015, 0, 1), apples: 3840, bananas: 1920, cherries: 960, dates: 400 },
+            { month: new Date(2015, 1, 1), apples: 1600, bananas: 1440, cherries: 960, dates: 400 },
+            { month: new Date(2015, 2, 1), apples: 640, bananas: 960, cherries: 640, dates: 400 },
+            { month: new Date(2015, 3, 1), apples: 320, bananas: 480, cherries: 640, dates: 400 }
+        ];
+        var stack = d3.stack()
+            .keys(["apples", "bananas", "cherries", "dates"])
+            .order(d3.stackOrderNone)
+            .offset(d3.stackOffsetNone);
+
+        var series2 = stack(data2);
+        console.log(series2)
+
+            
+            var valueFieldNames = data.columns.slice(1);
+            var entries = valueFieldNames.map(function (k) {
+            var values = data.map(function (d) { //날짜를 주단위로 바꿔주기
+                var date = d3.timeWeek.floor(d.date); //날짜가 해당하는 주의 일요일로 변환됨
+                return { date: date, value: d[k] }
+            });
+            values = d3.nest().key(function (d) { return d.date })
+                .rollup(function (leaves) { return d3.mean(leaves, function (d) { return d.value; }) })
+                .entries(values);
+            return { key: k, values: values }
+        })
+         var xDomain = d3.extent(entries[0].values, function (d) { return new Date(d.key) });
+        var x = d3.scaleTime().domain(xDomain)
+            .range([0, innerW]);
+
+        console.log(data.columns); //csv의 경우 열 정보를 별도로 확인할 수 있음
+
+     //http://devdocs.io/javascript/global_objects/array/slice 참조, 값을 알려주는 필드들 A,B,C
+        var yDomain = d3.extent( // yDomain의 범위가 ABC 마다 서로 다르기 때문에 이를 따로 구해 합쳐준다.
+            d3.merge( // 여러 배열을 하나로 뭉치기 https://github.com/d3/d3-array#merge
+                valueFieldNames.map(function (k) {
+                    return d3.extent(data, function (d) {
+                        return d[k];
+                    })
+                })));
+        var yMax = d3.max(series[3 - 1], function (d) { return d[1] }); 
+        var y = d3.scaleLinear().domain([0,yMax])
+            .range([innerH, 0]);
+        var c = d3.scaleOrdinal().domain(valueFieldNames)
+            .range(d3.schemeCategory10);
+
+     var line = d3.line()
+            .x(function (d) { return x(d.data2.date);}) //nesting을 해서 property가 key로 변환되고 type도 string이 되어버림
+            .y(function (d) { return y(d[1]); });
+        var area = d3.area()
+            .x(function (d, i) { return x(d.data2.date); })
+            .y0(function (d) { return y(d[0]); })
+            .y1(function (d) { return y(d[1]); });
+        var series = svg.selectAll('.series')
+            .data(entries, function (d) { return d.key })
+            .enter().append('g')
+            .attr('class', 'series')
+           // .style('fill', function (d) { return c(d.key) })
+           // .style('stroke', function (d) { return c(d.key) });
+        series.append('path')
+            .datum(function (d) { return c(d.key) })
+            .style('stroke', 'none')
+            .style('fill-opacity', 0.25)
+            .attr('d', area);
+        series.append('path')
+            .datum(function (d) { return c(d.key) })
+            .style('fill', 'none')
+            .attr('d', line); 
+        
+        }
+
+    </script>
+</body>
+
+</html>

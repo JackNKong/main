@@ -1,0 +1,38 @@
+div{
+    background-color : white;
+    text-align: right
+}
+div p.h1{ width : 200px;
+    height : 22px;
+    margin : 8px;
+    background-color: blue;
+    text-align : right
+}
+
+div p.h2{ width : 300px;
+    height : 22px;
+    margin : 8px;
+    background-color: blue;
+    text-align: right
+
+}
+div p.h3{ width : 400px;
+    height : 22px;
+    margin : 8px;
+    background-color: blue;
+    text-align: right
+
+}
+div p.h4{ width : 500px;
+    height : 22px;
+    margin : 8px;
+    background-color: blue;
+    text-align: right
+
+}
+
+div p.h5{ width : 100px;
+    height : 22px;
+    margin : 8px;
+    background-color: blue;
+    text-align: right
