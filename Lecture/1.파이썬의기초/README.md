@@ -45,7 +45,8 @@ b = 1.2
 'n'
 >>> a[0:5]
 'Life '
-'''
+```
+
 문자열 포맷
 ```python
 >>> "I have %s apples" % 3
