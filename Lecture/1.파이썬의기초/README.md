@@ -201,6 +201,7 @@ CNN_BIG_KOREAN.items()
 ```
 ### 6. 집합
 ---
+```python
 >>> s2 = set("Hello")
 >>> s2
 {'e', 'H', 'l', 'o'}
@@ -213,13 +214,16 @@ CNN_BIG_KOREAN.items()
 
 >>> s1 | s2
 {1, 2, 3, 4, 5, 6, 7, 8, 9}
-
+```
 ### 7. 불
 ---
+```python
 >>> a = True
 >>> b = False
-
+```
 ### 8. 변수
 ---
+```python
 a, b = ('python', 'life')
 [a,b] = ['python', 'life']
+```
