@@ -1,13 +1,19 @@
-# JackNKong.github.io
+# 제어문(if, while, for)
 ---
 
-안녕하세요 정재근입니다.
+"집을 지을때 나무, 돌, 시멘트 등은 재료가, 철근은 집의 뼈대가 된다. 제어문은 집의 뼈대를 이루는 철근"
+
+참고 점프 투 파이썬(https://wikidocs.net/12)
+
+제어문은 알고리즘의 꽃, 이거만 잘하면 다 잘한다
+
 
 ---
 
 
-대학생 독학 (Python, JavaScript... , 2015~2018)
- - [Data](./Data) 
- - [Game&App](./Game&App) 
- - [영상](./Video) 
- - [보기](./Website) 
+### 1. 숫자형
+---
+정수형(int)과 실수형(float)
+
+```python
+a = 123
