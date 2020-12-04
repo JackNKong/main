@@ -19,14 +19,14 @@ a = -789
 a = 0
 b = 1.2
 
->>> a = 3
->>> b = 4
->>> a + b
-7
->>> a * b
-12
->>> a / b
-0.75
+a = 3
+b = 4
+a + b
+>>> 7
+a * b
+>>> 12
+a / b
+>>> 0.75
 
 ```
 ### 2. 문자열
@@ -36,50 +36,53 @@ b = 1.2
 'Python is fun'
 'Mother's favorite singer is blackpink'
 ##indexing
->>> a = "Life is too short, You need Python"
->>> a[0]
-'L'
->>> a[12]
-'s'
->>> a[-1]
-'n'
->>> a[0:5]
-'Life '
+a = "Life is too short, You need Python"
+a[0]
+>>> 'L'
+a[12]
+>>> 's'
+a[-1]
+>>> 'n'
+a[0:5]
+>>> 'Life '
 ```
 
 문자열 포맷
 ```python
->>> "I have %s apples" % 3
-'I have 3 apples'
+"I have %s apples" % 3
+>>> 'I have 3 apples'
 
->>> name = 'BLACKPINK'
->>> first_music = 'BOOMBAYAH' 
->>> f'가수 이름은 {name}입니다. 데뷔곡은 {first_music}입니다.'
-가수 이름은 BLACKPINK입니다. 데뷔곡은 BOOMBAYAH입니다.
+name = 'BLACKPINK'
+first_music = 'BOOMBAYAH' 
+f'가수 이름은 {name}입니다. 데뷔곡은 {first_music}입니다.'
+>>> 가수 이름은 BLACKPINK입니다. 데뷔곡은 BOOMBAYAH입니다.
 ```
+
 문자열 함수
 ```python
+
 ###join
->>> ",".join(['a', 'b', 'c', 'd'])
-'a,b,c,d'
+",".join(['a', 'b', 'c', 'd'])
+>>> 'a,b,c,d'
 
 ###strip
->>> a = " hi "
->>> a.strip()
-'hi'
+a = " hi "
+a.strip()
+>>> 'hi'
 
 ###find
->>> a = "Python is the best choice"
->>> a.find('b')
-14
+a = "Faker is the best player"
+a.find('b')
+>>> 14
 
 ###split
->>> a = "Life is too short"
->>> a.split()
-['Life', 'is', 'too', 'short']
->>> b = "a:b:c:d"
->>> b.split(':')
-['a', 'b', 'c', 'd']
+a = "Life is too short"
+a.split()
+>>> ['Life', 'is', 'too', 'short']
+
+b = "top:jungle:mid:bottom:sup"
+b.split(':')
+>>> ['top', 'bjungle, 'mid', 'bottom',sup]
 
 ```
 ### 3. 리스트
