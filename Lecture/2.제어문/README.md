@@ -80,3 +80,25 @@ else :
   print("걸어가라")
 ```
 
+
+---
+
+
+### 2. while문
+---
+
+```python
+while <조건문>:
+    <수행할 문장1>
+    <수행할 문장2>
+    <수행할 문장3>
+    ...
+```
+
+'''python
+while treeHit < 10:
+     treeHit = treeHit +1
+     print("나무를 %d번 찍었습니다." % treeHit)
+     if treeHit == 10:
+         print("나무 넘어갑니다.")
+```
