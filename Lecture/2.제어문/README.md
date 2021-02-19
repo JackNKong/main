@@ -95,7 +95,7 @@ while <조건문>:
     ...
 ```
 
-'''python
+```python
 while treeHit < 10:
      treeHit = treeHit +1
      print("나무를 %d번 찍었습니다." % treeHit)
