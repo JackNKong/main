@@ -1,26 +1,33 @@
-# 제어문(if, while, for)
----
-
-"집을 지을때 나무, 돌, 시멘트 등은 재료가, 철근은 집의 뼈대가 된다. 제어문은 집의 뼈대를 이루는 철근"
-
-참고 점프 투 파이썬(https://wikidocs.net/19)
-
-제어문은 알고리즘의 꽃, 이거만 잘하면 다 잘한다
 
 
 ---
-
-
-### 1. if문
+### 1. 5명 시험봤는데 합격자와 불합격자 가르는 결과 만들기 
 ---
-"돈이 있으면 택시를 타고, 돈이 없으면 걸어간다"
+marks = [90, 25, 67, 45, 80]
 
 ```python
-money = 10000
-if money > 1000000 :
-    print("택시를 타고 가라"
-    
-else : 
-    print("걸어 가라")
-     
+number = 0 
+for mark in marks: 
+    number = number +1 
+    if mark >= 60: 
+        print("%d번 학생은 합격입니다." % number)
+    else: 
+        print("%d번 학생은 불합격입니다." % number)
+```
+
+---
+### 2.구구단 소스코드 만들기  
+---
+hint !
+range함수는 시작숫자, 끝숫자, 간격 입력시 해당 숫자를 보내준다.
+range(1,10) > 1부터 9까지 
+
+```python
+number = 0 
+for mark in marks: 
+    number = number +1 
+    if mark >= 60: 
+        print("%d번 학생은 합격입니다." % number)
+    else: 
+        print("%d번 학생은 불합격입니다." % number)
 ```
