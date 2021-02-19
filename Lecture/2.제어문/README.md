@@ -131,3 +131,37 @@ while a < 10:
      if a % 2 == 0: continue
      print(a)
 ```
+
+
+---
+
+
+### 2. for문
+---
+"기본 구문"
+```python
+for 변수 in 리스트(또는 튜플, 문자열):
+    수행할 문장1
+    수행할 문장2
+```
+
+"전형적 for문 예시"
+```python
+champion_list = ['garen','lux','diana']
+for champion in champion_list:
+    print(champion)
+```
+
+
+"특수형태 for문 예시"
+```python
+hitter_list = ['lee_jb','lee_yk','lee_sy']
+for i,hitter in enumerate(hitter_list):
+    print(i,"번 타자",hitter)
+```
+
+```python
+lolchess_dic = {'Dragonsoul':'Tristana','Fortune':'Annie','Mage':'Brand'}
+for key,value in lolchess_dic.items():
+    print(key,value)
+```
