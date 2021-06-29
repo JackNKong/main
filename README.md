@@ -4,7 +4,10 @@
 안녕하세요 정재근입니다.
 
 ---
-강좌 관련(숨은고수) [Lecture](./Lecture)
+강좌 관련 [Lecture](./Lecture)
+
+프로그래머스 코딩테스트 연습
+숨은고수
 
 ---
 이랜드 시스템스 AI 플랫폼팀 (2020.01 ~ )[ElandSystem](./ElandSystem)
