@@ -6,12 +6,13 @@
 ---
 강좌 관련 [Lecture](./Lecture)
 
-1. 프로그래머스 코딩테스트 연습
-2. 숨은고수 코칭
+ 1. 프로그래머스 코딩테스트 연습
+ 2. 숨은고수 코칭
 
 ---
 이랜드 시스템스 AI 플랫폼팀 (2020.01 ~ )[ElandSystem](./ElandSystem)
-데이터 ETL과정 제외(postgresql, s3업로드, redshift외부테이블)
+ - 보안상 일부 수집파일 폴더만 표기
+ - 데이터 ETL과정 제외(postgresql, s3업로드, redshift외부테이블)
 
  1. [경쟁사 크롤링](./ElandSystem/competitor_crawl)
  - 무신사, 유니클로, 한섬, LF몰 등 15개 사이트
