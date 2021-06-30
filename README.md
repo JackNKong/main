@@ -13,11 +13,11 @@
 이랜드 시스템스 AI 플랫폼팀 (2020.01 ~ )[ElandSystem](./ElandSystem)
 데이터 ETL과정 제외(postgresql, s3업로드, redshift외부테이블)
 
- 1. 경쟁사 크롤링
+ 1. 경쟁사 크롤링(./Growthhackers/competitor_crawl)
  - 무신사, 유니클로, 한섬, LF몰 등 15개 사이트
- 2. SNS 크롤링
+ 2. SNS 크롤링(./Growthhackers/sns_crawl)
  - 네이버 데이터랩, 인스타그램 
- 3. API 솔루션
+ 3. API 솔루션(./Growthhackers/api_solution)
  - 구글 OCR, 유튜브 조회수 메일링
  
 ---
