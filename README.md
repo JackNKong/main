@@ -11,6 +11,8 @@
 
 ---
 이랜드 시스템스 AI 플랫폼팀 (2020.01 ~ )[ElandSystem](./ElandSystem)
+데이터 ETL과정 제외(postgresql, s3업로드, redshift외부테이블)
+
  1. 경쟁사 크롤링
  - 무신사, 유니클로, 한섬, LF몰 등 15개 사이트
  2. SNS 크롤링
