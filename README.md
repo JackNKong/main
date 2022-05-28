@@ -10,7 +10,12 @@
  2. 숨은고수 코칭
 
 ---
-이랜드 시스템스 AI 플랫폼팀 (2020.01 ~ )[ElandSystem](./ElandSystem)
+SK 증권 디지털사업팀 (2021.10 ~ )
+ 1. 분석플랫폼 운영
+
+
+---
+이랜드 시스템스 AI 플랫폼팀 (2020.01 ~ 2021.09)[ElandSystem](./ElandSystem)
  - 보안상 일부 수집파일 폴더만 표기
  - 데이터 ETL과정 제외(postgresql, s3업로드, redshift외부테이블)
 
